@@ -1,0 +1,162 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coffee Lovers</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        Color: #D07719;
+        border: 2px solid #AE7C5B;
+        font-size: 45px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    p {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        font-family: sans-serif;
+        line-height: 1.5;
+        padding: 15px;
+    }
+
+    body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/567/original/istockphoto-1131399004-612x612.jpg?1675887403");
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        background: #D07719;
+        color: white;
+        font-size: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    div {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        border-radius: 15px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+    }
+
+
+    .learn-more {
+        display: block;
+        margin-top: 10px;
+        color: #D07719;
+        text-decoration: none;
+
+    }
+
+    .learn-more:hover {
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .footer:hover {
+        cursor: pointer;
+        ;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>
+            <strong>
+                Coffee Lovers 🖤
+            </strong>
+        </h1>
+        <h2>
+            MAKE IT PERFECT AT HOME!
+        </h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/528/original/coffee-1544175380.jpg?1675873291"
+            alt="Coffee Lovers" />
+        <p>
+            As the world of work has changed this year, so has the world of coffee. With more people working from home,
+            and fewer
+            opportunities to grab a cup on the go, more of us are trying to replicate our morning takeout in our own
+            kitchen. Of
+            course there’s nothing wrong with just a jar of instant – but if you want to up your coffee-making game the
+            choices are
+            pretty much endless. For those on the quest for the ultimate, world-beating cup of coffee-heaven, here’s our
+            expert
+            guide.
+            <br />
+            <a href="https://www.theguardian.com/food/2020/sep/25/higher-ground-the-expert-guide-to-making-the-perfect-cup-of-coffee-at-home"
+                target="_blank" class="learn-more">
+                <strong> Learn more here! </strong></a>
+        </p>
+        <button class="buyButton">
+            ☕︎ Enter Your Favourite Coffee Here!
+        </button>
+        <br />
+        <p class="footer"> This page was built by
+            <a href="https://www.instagram.com/pri.scarabelli/" target="_blank"> Pri Scarabelli🤓</a>
+        </p>
+    </div>
+    <script>
+
+        function hotCoffee() {
+            let name = prompt("What is your name?");
+
+            if (name.length > 1) {
+                let email = prompt(" What is your email address?");
+                let coffee = prompt("What is your favourite type of coffee?");
+                alert("Thank you " + name +
+                    "! We will be in touch via email, meanwhile don't forget to have a " +
+                    coffee + "! 😃 ");
+            }
+
+            else {
+                alert("Sorry that you don't like coffee. 😟 ")
+            }
+
+        }
+        let buyButton = document.querySelector("button");
+        buyButton.addEventListener("click", hotCoffee);
+
+    </script>
+</body>
+
+</html>

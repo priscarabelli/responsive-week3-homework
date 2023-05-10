@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #662eed;
+    --secondary-color: #f66390;
+    --third-color: #f8cb4c;
+    --background: #d7c9fa;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.home-page {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.about-me-h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 60px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about-me-contact-h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.about-p {
+    text-align: center;
+}
+
+.countries {
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--background);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    font-size: 18px;
+}
+
+.sud-heading {
+    color: var(--primary-color);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 24px;
+}
+
+.contact-icon {
+    color: var(--secondary-color);
+}
+
+.email {
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 36px;
+}
+
+.email:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
